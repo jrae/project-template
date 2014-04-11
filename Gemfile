@@ -8,6 +8,8 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'pg'
 
+# Grid
+gem 'neat'
 
 # Gems used only for assets and not required
 # in production environments by default.
