@@ -13,6 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+public/assets
 public/system
 config/database.yml
 .tork.rb
@@ -20,6 +21,23 @@ config/database.yml
 *.dump
 .rbenv-gemsets
 .ruby-version
-bin
+.ruby-gemset
 .powrc
+.powenv
 .rvmrc
+coverage/
+/.env
+
+# Ignore tags files
+/tags
+/.tags
+/.tags_sorted_by_file
+/.gemtags
+
+# Ignore tags files
+/tags
+/.tags
+/.tags_sorted_by_file
+/.gemtags
+
+public/sitemap.xml.gz
