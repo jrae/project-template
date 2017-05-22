@@ -23,6 +23,8 @@ module ProjectTemplate
     # like if you have constraints or database-specific column types
     config.active_record.schema_format = :sql
 
+    config.eager_load = false
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -59,16 +61,16 @@ module ProjectTemplate
     # like if you have constraints or database-specific column types
     # config.active_record.schema_format = :sql
 
-    # Enforce whitelist mode for mass assignment.
-    # This will create an empty whitelist of attributes available for mass-assignment for all models
-    # in your app. As such, your models will need to explicitly whitelist or blacklist accessible
-    # parameters by using an attr_accessible or attr_protected declaration.
-    config.active_record.whitelist_attributes = true
-
     # Enable the asset pipeline
     config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.secret_token = ENV['SECRET_TOKEN']
+    config.secret_key_base = ENV['SECRET_KEY_BASE']
+    config.devise_secret_key = ENV['DEVISE_SECRET_KEY']
+    config.devise_pepper = ENV['DEVISE_PEPPER']
+
   end
 end

@@ -1,16 +1,17 @@
 source 'https://rubygems.org'
-ruby "2.2.2"
-gem 'rails', '4.2.3'
+ruby "2.4.1"
+gem 'rails', '5.1'
 
 # UI
-gem 'neat'
-gem 'bourbon'
+# gem 'draper'
 gem 'bitters'
+gem 'bourbon'
+gem 'neat'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'sass-rails'
 gem 'normalize-rails'
-gem 'draper'
+gem 'devise'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
@@ -36,6 +37,7 @@ end
 
 group :development, :test do
   gem 'byebug'
+  gem 'dotenv-rails'
 end
 
 # IF HEROKU
