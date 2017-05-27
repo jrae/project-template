@@ -21,7 +21,7 @@ module ProjectTemplate
     # Use SQL instead of Active Record's schema dumper when creating the database.
     # This is necessary if your schema can't be completely dumped by the schema dumper,
     # like if you have constraints or database-specific column types
-    config.active_record.schema_format = :sql
+    # config.active_record.schema_format = :sql
 
     config.eager_load = false
 
@@ -71,6 +71,12 @@ module ProjectTemplate
     config.secret_key_base = ENV['SECRET_KEY_BASE']
     config.devise_secret_key = ENV['DEVISE_SECRET_KEY']
     config.devise_pepper = ENV['DEVISE_PEPPER']
+
+    config.action_mailer.default_url_options = { host: 'localost:3000'}
+
+    config.support_email = ENV.fetch('SUPPORT_EMAIL', 'no-reply@example.com')
+
+    config.action_mailer.preview_path = "#{Rails.root}/lib/mail_previews"
 
   end
 end
