@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby "2.4.1"
-gem 'rails', '5.1'
+gem 'rails', '~> 5.1'
 
 # UI
 # gem 'draper'
@@ -11,6 +11,7 @@ gem 'sass-rails'
 # Some likely gems
 # gem 'devise'
 # gem 'simple_form'
+# gem 'decent_exposure'
 # gem "httparty"
 
 # Use Uglifier as compressor for JavaScript assets
@@ -20,6 +21,7 @@ gem 'uglifier'
 gem 'pg'
 
 gem 'puma'
+# gem 'rails_service_check', git: 'https://github.com/wearefuturegov/rails_service_check'
 
 group :development do
   gem 'bullet'
