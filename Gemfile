@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.4.1"
+ruby "2.4.2"
 gem 'rails', '~> 5.1'
 
 # UI
@@ -7,6 +7,7 @@ gem 'rails', '~> 5.1'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'sass-rails'
+gem 'geff', git: 'https://github.com/wearefuturegov/geff.git'
 
 # Some likely gems
 # gem 'devise'
