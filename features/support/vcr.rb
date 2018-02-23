@@ -8,5 +8,4 @@ end
 
 VCR.cucumber_tags do |t|
   # t.tags RSpec.configure do |config|
-  '@mapit_RH122EU', '@mapit_BN133QZ', '@mapit_event_RH122EU'
 end
